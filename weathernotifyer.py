@@ -1,5 +1,4 @@
 import pyowm
-import smtplib 
 import datetime
 import time
 from win10toast import ToastNotifier
