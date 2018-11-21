@@ -17,7 +17,9 @@ def get_weather_data():
     tomorrow = pyowm.timeutils.tomorrow()
     temperature_now = temp["temp"]
     wind_now = wind["speed"]
-
+    if len(rain) == 0:
+        rain = "no rain in your area now"
+  
     weather_data = "the temperature now is: "+ str(temperature_now) + " °C" + " the wind speed is: " + str(wind_now) +" MPH" + " the current humidity is " + str(humidity) + "%" + " the current rain fall is" + str(rain) + "%"
     print(weather_data)
     toaster.show_toast("weather data now in your location",weather_data,icon_path=None,duration=10,threaded=True)
