@@ -19,8 +19,8 @@ def get_weather_data():
     wind_now = wind["speed"]
     if len(rain) == 0:
         rain = "no rain in your area now"
-  
-    weather_data = "the temperature now is: "+ str(temperature_now) + " °C" + " the wind speed is: " + str(wind_now) +" MPH" + " the current humidity is " + str(humidity) + "%" + " the current rain fall is" + str(rain) + "%"
+    time = datetime.datetime.now()
+    weather_data = "the temperature now is: "+ str(temperature_now) + " °C" + " the wind speed is: " + str(wind_now) +" MPH" + " the current humidity is " + str(humidity) + "%" + " the current rain fall is" + str(rain) + "%" + str(time) 
     print(weather_data)
     toaster.show_toast("weather data now in your location",weather_data,icon_path=None,duration=10,threaded=True)
     while toaster.notification_active():
