@@ -17,8 +17,10 @@ def get_weather_data():
     tomorrow = pyowm.timeutils.tomorrow()
     temperature_now = temp["temp"]
     wind_now = wind["speed"]
+	
     if len(rain) == 0:
         rain = "no rain in your area now"
+		
     time = datetime.datetime.now()
     weather_data = "the temperature now is: "+ str(temperature_now) + " °C" + " the wind speed is: " + str(wind_now) +" MPH" + " the current humidity is " + str(humidity) + "%" + " the current rain fall is" + str(rain) + "%" + str(time) 
     print(weather_data)
