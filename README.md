@@ -7,7 +7,7 @@ requierd pakages pyowm, win10toast
 
 !!!WIP!!!
 
-#TODO
+# TODO
 near future:
 add loactaion selection, changeing frequency of notifications, command line arguments, 
 Long away:
