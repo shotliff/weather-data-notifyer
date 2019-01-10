@@ -1,16 +1,16 @@
 # weather-data-notifyer
-get current weather data for exeter uk and outputs it on a time through a toast notifcation.
+get current weather data for exeter uk and outputs it on a time through a toast notification.
 
-this will be imporved later this was done in a rush.
+this will be improved later this was done in a rush.
 
-requierd pakages pyowm, win10toast 
+required packages pyowm, win10toast 
 
 !!!WIP!!!
 
 # TODO
 near future:
-add loactaion selection, changeing frequency of notifications, command line arguments, 
+add location selection, changing frequency of notifications, command line arguments, 
 Long away:
-compileing a realase .exe 
+compiling a release .exe 
 GUI
 Custom messages
